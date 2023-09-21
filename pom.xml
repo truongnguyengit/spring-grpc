@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.truong</groupId>
+	<artifactId>com.truong</artifactId>
+	<version>1.0.1.RELEASE</version>
+	<packaging>pom</packaging>
+
+	<name>com.truong</name>
+	<description>test</description>
+
+	<properties>	
+		<spring-boot-grpc.version>2.14.0.RELEASE</spring-boot-grpc.version>
+		<grpc.version>1.51.0</grpc.version>
+		<protoc.version>3.21.7</protoc.version>
+		<io.grpc.version>1.54.0</io.grpc.version>
+		<os-maven-plugin.version>1.7.1</os-maven-plugin.version>
+		<protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+		<annotations-api.version>6.0.53</annotations-api.version>
+	</properties>
+
+	<modules>
+		<module>grpc.client</module>
+		<module>grpc.service</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-starter-parent</artifactId>
+			    <version>2.7.14</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	
+
+</project>
+

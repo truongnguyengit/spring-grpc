@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package test.proto;
+
+service MyService {
+    rpc findOne (MyRequest) returns (MyResponse) {}
+}
+
+message MyRequest {
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message MyResponse {
+	int32 status = 1;
+    string message = 2;
+    int32 data = 3;
+}
